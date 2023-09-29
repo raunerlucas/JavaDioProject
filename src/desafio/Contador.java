@@ -8,22 +8,22 @@ public class Contador {
         int cont = 0;
         do {
             try {
-                pegadaDados();
+                pegaDados();
                 cont++;
             } catch (InputMismatchException e) {
                 System.out.println("O segundo parâmetro deve ser maior que o primeiro");
-                System.out.println("O parametros devem ser numeros inteiros");
+                System.out.println("Os parâmetros devem ser números inteiros");
                 System.out.println();
             }
-        }while (cont == 0);
+        } while (cont == 0);
     }
 
-    public static void pegadaDados() {
+    public static void pegaDados() {
         Scanner terminal = new Scanner(System.in);
-        System.out.println("Digite numeros Inteiros e o segundo deve ser maior!");
-        System.out.print("Digite o primeiro parâmetro: ");
+        System.out.println("Digite números Inteiros e o segundo deve ser maior!");
+        System.out.print("Digite o primeiro número: ");
         int parametroUm = terminal.nextInt();
-        System.out.print("Digite o segundo parâmetro: ");
+        System.out.print("Digite o segundo número: ");
         int parametroDois = terminal.nextInt();
         contar(parametroUm, parametroDois);
     }
